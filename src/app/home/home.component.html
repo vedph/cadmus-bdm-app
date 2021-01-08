@@ -1,0 +1,16 @@
+<div style="margin: 0 16px">
+  <div id="banner"></div>
+  <article>
+    <h2>Cadmus Buondelmonti</h2>
+    <h3>Buondelmonti Cadmus Editor</h3>
+    <p>
+      Welcome to the project editing dashboard for the Cristoforo Buondelmonti
+      project.
+    </p>
+    <p *ngIf="!logged" style="margin-bottom: 8px">
+      <a mat-mini-fab color="primary" routerLink="/login"
+        ><mat-icon>login</mat-icon></a
+      ><span style="margin-left: 8px">please login</span>
+    </p>
+  </article>
+</div>
