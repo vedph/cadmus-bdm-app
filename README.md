@@ -2,8 +2,8 @@
 
 Quick Docker image build:
 
-1. `ng build --prod`
-2. `docker build . -t vedph2020/cadmus-bdm-app:1.0.7 -t vedph2020/cadmus-bdm-app:latest` (replace with the current version)
+1. `ng build --configuration production`
+2. `docker build . -t vedph2020/cadmus-bdm-app:1.0.8 -t vedph2020/cadmus-bdm-app:latest` (replace with the current version)
 
 Web application frontend for Cadmus Cristoforo Buondelmonti project. This application is built by packing together a number of components:
 

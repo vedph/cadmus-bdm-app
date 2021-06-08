@@ -1,11 +1,32 @@
 <div style="margin: 0 16px">
-  <div id="banner"></div>
+  <div class="banner">
+    <img
+      class="banner-img"
+      srcset="
+        ./assets/img/banner-1024.jpg 1024w,
+        ./assets/img/banner-512.jpg   512w
+      "
+      sizes="(max-width: 600px) 512px, 1024px"
+    />
+  </div>
   <article>
-    <h2>Cadmus Buondelmonti</h2>
-    <h3>Buondelmonti Cadmus Editor</h3>
+    <h2>Cadmus MapAeg</h2>
     <p>
       Welcome to the project editing dashboard for the Cristoforo Buondelmonti
       project.
+    </p>
+    <p>
+      MapAeg is aimed at the study and the promotion of knowledge of the
+      <em>Liber Insularum Archipelagi</em> (1420) by the Florentine traveler
+      Cristoforo Buondelmonti. This book can be considered the first guide to
+      the Greek islands, each of them described by a textual paragraph and
+      illustrated by colour maps, in a format which gave rise to the new
+      literary genre of Isolaria. In addition to offering precious information
+      on the specific islands, the <em>Liber</em> occupies a relevant role in
+      history of European cultural heritage as the travels of Buondelmonti paved
+      the way to the rediscovery and exploration of Greece, a land whose
+      territory, language and culture were still largely unknown to Western
+      European scholars.
     </p>
     <p *ngIf="!logged" style="margin-bottom: 8px">
       <a mat-mini-fab color="primary" routerLink="/login"
