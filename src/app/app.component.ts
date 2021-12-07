@@ -1,17 +1,22 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { User, GravatarService, Thesaurus, ThesaurusEntry } from '@myrmidon/cadmus-core';
+import {
+  User,
+  GravatarService,
+  Thesaurus,
+  ThesaurusEntry,
+} from '@myrmidon/cadmus-core';
 import { AuthService } from '@myrmidon/cadmus-api';
 import { AppService, AppQuery } from '@myrmidon/cadmus-state';
 
 @Component({
   selector: 'bdm-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
   public user: User | undefined;
   public logged: boolean;
-  public itemBrowsers: ThesaurusEntry[]| undefined;
+  public itemBrowsers: ThesaurusEntry[] | undefined;
 
   constructor(
     @Inject('itemBrowserKeys')
@@ -25,12 +30,12 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.user = this._authService.currentUserValue;
+    this.user = this._authService.currentUserValue || undefined;
     this.logged = this.user !== null;
 
-    this._authService.currentUser$.subscribe((user: User) => {
+    this._authService.currentUser$.subscribe((user: User | null) => {
       this.logged = this._authService.isAuthenticated(true);
-      this.user = user;
+      this.user = user || undefined;
       // load the general app state just once
       if (user) {
         this._appService.load();
@@ -39,7 +44,7 @@ export class AppComponent implements OnInit {
 
     this._appQuery
       .selectItemBrowserThesaurus()
-      .subscribe((thesaurus: Thesaurus) => {
+      .subscribe((thesaurus: Thesaurus | undefined) => {
         this.itemBrowsers = thesaurus?.entries;
       });
   }

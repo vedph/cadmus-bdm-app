@@ -16,11 +16,7 @@ import { MarkdownModule } from 'ngx-markdown';
 // Akita
 import { AkitaNgDevtools } from '@datorama/akita-ngdevtools';
 
-import {
-  CadmusCoreModule,
-  PendingChangesGuard,
-  EnvServiceProvider,
-} from '@myrmidon/cadmus-core';
+import { CadmusCoreModule, PendingChangesGuard } from '@myrmidon/cadmus-core';
 import { CadmusUiModule } from '@myrmidon/cadmus-ui';
 import { CadmusPartGeneralUiModule } from '@myrmidon/cadmus-part-general-ui';
 import { CadmusPartPhilologyUiModule } from '@myrmidon/cadmus-part-philology-ui';
@@ -35,12 +31,10 @@ import {
 import { PART_EDITOR_KEYS } from './part-editor-keys';
 import { ITEM_BROWSER_KEYS } from './item-browser-keys';
 import { INDEX_LOOKUP_DEFINITIONS } from './index-lookup-definitions';
+import { EnvServiceProvider } from '@myrmidon/ng-tools';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent
-  ],
+  declarations: [AppComponent, HomeComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
