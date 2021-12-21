@@ -4,5 +4,4 @@
 
   // environment-dependent settings
   window.__env.apiUrl = 'http://localhost:62435/api/';
-  window.__env.databaseId = 'cadmus-bdm';
 }(this));
