@@ -13,8 +13,9 @@ Web application frontend for Cadmus Cristoforo Buondelmonti project. This applic
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
-## History
+## Hist
 
+- 2022-07-27: upgraded to Angular 14.
 - 2021-12-21: upgraded to new shell.
 - 2021-12-07 (v.2.0.0): upgraded to refactored API clients.
 - 2021-11-11: upgraded Angular.
