@@ -15,6 +15,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Hist
 
+- 2022-10-05:
+  - updated packages.
+  - added preview.
+
+### 2.0.0
+
 - 2022-09-03: updated packages including preview.
 - 2022-07-27: upgraded to Angular 14.
 - 2021-12-21: upgraded to new shell.

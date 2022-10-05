@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import {
-  FormGroup,
-  FormControl,
-  FormBuilder,
   Validators,
+  FormControl,
+  FormGroup,
+  FormBuilder,
 } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { AuthJwtAccountService } from '@myrmidon/auth-jwt-admin';
