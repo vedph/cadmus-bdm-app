@@ -3,7 +3,7 @@
 Quick Docker image build:
 
 1. `ng build --configuration production`
-2. `docker build . -t vedph2020/cadmus-bdm-app:2.0.0 -t vedph2020/cadmus-bdm-app:latest` (replace with the current version)
+2. `docker build . -t vedph2020/cadmus-bdm-app:3.0.0 -t vedph2020/cadmus-bdm-app:latest` (replace with the current version)
 
 Web application frontend for Cadmus Cristoforo Buondelmonti project. This application is built by packing together a number of components:
 
@@ -13,8 +13,11 @@ Web application frontend for Cadmus Cristoforo Buondelmonti project. This applic
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
-## Hist
+## History
 
+### 3.0.0
+
+- 2023-02-07: migrated to ELF-based infrastructure.
 - 2022-10-05:
   - updated packages.
   - added preview.
