@@ -15,6 +15,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## History
 
+- 2023-05-10: updated Angular and packages.
+
 ### 3.0.0
 
 - 2023-02-07: migrated to ELF-based infrastructure.
