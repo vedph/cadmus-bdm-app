@@ -3,7 +3,7 @@
 Quick Docker image build:
 
 1. `ng build --configuration production`
-2. `docker build . -t vedph2020/cadmus-bdm-app:3.0.0 -t vedph2020/cadmus-bdm-app:latest` (replace with the current version)
+2. `docker build . -t vedph2020/cadmus-bdm-app:4.0.1 -t vedph2020/cadmus-bdm-app:latest` (replace with the current version)
 
 Web application frontend for Cadmus Cristoforo Buondelmonti project. This application is built by packing together a number of components:
 
@@ -15,7 +15,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## History
 
-- 2023-05-10: updated Angular and packages.
+### 4.0.1
+
+- 2023-05-10:
+  - updated Angular and packages.
+  - switched to PostgreSQL in Docker compose.
 
 ### 3.0.0
 

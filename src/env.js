@@ -3,6 +3,8 @@
   window.__env = window.__env || {};
 
   // environment-dependent settings
-  window.__env.apiUrl = 'http://localhost:62435/api/';
-  window.__env.version = '3.0.0';
-}(this));
+  window.__env.apiUrl = "http://localhost:62435/api/";
+  window.__env.version = "4.0.1";
+  // enable thesaurus import in thesaurus list for admins
+  window.__env.thesImportEnabled = true;
+})(this);
