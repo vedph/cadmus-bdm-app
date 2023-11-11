@@ -15,6 +15,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## History
 
+- 2023-11-11:
+  - ⚠️ upgraded to Angular 17.
+  - opted in flag editor.
+
 ### 4.0.1
 
 - 2023-05-10:
